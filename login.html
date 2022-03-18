@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+    <!--<form action="/test/",method="post">
+        <p>登录数据库：</p>
+        <p>User:<input type="text" name="user"></p>
+        <p>host:<input type="text" name="host"></p>
+        <p>port:<input type="text" name="port"></p>
+        <p>password:<input type="password" name="password"></p>
+        <p>db:<input type="text" name="db"></p>
+        <input type="submit" name="submit">
+    </form>-->
+    <form action="/index/">
+        <div>您不打算更新数据<input type="submit" name="submit"></div>
+    </form>
+    <form action="/getdata/" method="post">
+        <div>您打算更新数据。更新数目：<input type="number" name="name"><input type="submit" name="submit"></div>
+        <p>(ps:如果检测到数据库中存在已有数据，则不进行更新)</p>
+    </form>
+
+</body>
+</html>

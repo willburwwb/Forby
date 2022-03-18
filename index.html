@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论文检索工具</title>
+</head>
+<body>
+    <h3>您可以进行增删改查操作</h3>
+    <div>
+        <form action="/ans" method="POST">
+            Select:
+            <select name="name">
+                <option value="hust_title">title</option>
+                <option value="hust_author">authors</option>
+                <option value="hust_date">date</option>
+                <option value="hust_subject">subject</option>
+            </select>
+            <input type="text" name="ask_name">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+    <div>
+        <form action="/other" method="POST">
+            Delete:
+            <select name="del_name">
+                <option value="hust_title">title</option>
+                <option value="hust_author">authors</option>
+                <option value="hust_date">date</option>
+                <option value="hust_subject">subject</option>
+            </select>
+            <input type="text" name="del_ask_name">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+    <div>
+        <form action="/other" method="POST">
+            Update:
+            <select name="upd_name">
+                <option value="hust_title">title</option>
+                <option value="hust_author">authors</option>
+                <option value="hust_date">date</option>
+                <option value="hust_subject">subject</option>
+            </select>
+            <input type="text" name="upd_ask_name">
+            <input type="text" name="las_ask_name">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>
